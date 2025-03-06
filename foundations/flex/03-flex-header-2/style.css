@@ -11,15 +11,23 @@ body {
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .profile-image {
+  display: flex;
+  justify-content: flex-end;
   background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, .5);
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  margin-left: 16px;
 }
 
 .logo {
@@ -37,6 +45,11 @@ button {
   padding: 8px 24px;
 }
 
+.notifications {
+  display: flex;
+  justify-content: flex-end;
+}
+
 a {
   /* this removes the line under our links */
   text-decoration: none;
@@ -45,4 +58,18 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  /* Ensures both elements are vertically aligned */
+  gap: 8px;
+  /* Adjust this to control spacing  */
 }
