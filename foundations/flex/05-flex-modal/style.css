@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -9,7 +10,7 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
+  /* I'll give you this one for free */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +20,24 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+}
+
+.close-button {
+  align-self: flex-start;
+  margin-left: auto;
 }
 
 .icon {
@@ -48,6 +66,32 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 58px;
+  gap: 10px;
+
+}
+
+.text {
+  padding-left: 58px;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 button {
